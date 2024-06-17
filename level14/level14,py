@@ -1,0 +1,30 @@
+
+
+
+ffff = 2
+while ffff <= 10:
+    print(ffff)
+    ffff = ffff + 3
+
+ო = 1
+while ო <= 100:
+    print(ო)
+    ო = ო + 2
+
+
+countdown = 1
+while countdown > 0:
+    print(countdown)
+    countdown = countdown - 1
+print("Done!")
+
+
+num = 1
+while num <= 5:
+    print(num)
+    num = num + 1
+
+user_input = ""
+while user_input.lower() != "exit":
+    user_input = input("Type 'exit' to stop the loop: ")
+    print("You typed:", user_input)
