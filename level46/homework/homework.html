@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Travel Cards</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin: 10px 0 0 0;
+        }
+
+        /* Replace with your actual images */
+        .card-1 {
+            background-image:url( https://d1bvpoagx8hqbg.cloudfront.net/originals/experience-seoul-south-korea-hyewan-1aa08455e2dd8ef4e42392a3aa1f3c25.jpg)
+        }
+
+        .card-2 {
+            background-image: url(https://th.bing.com/th/id/OIP.LnpdH8d7IOWKK-NjAd-ysAHaE8?rs=1&pid=ImgDetMain)
+        }
+
+        .card-3 {
+            background-image: url(https://th.bing.com/th/id/OIP.OnV7ZfMMWcER0iLvJTvBgQEsDH?rs=1&pid=ImgDetMain)
+        }
+
+        .card-4 {
+            background-image: url(https://th.bing.com/th/id/R.4b0d777fc392d2352f3630933776499e?rik=S0zIgGWHojFmtQ&pid=ImgRaw&r=0)
+        }
+
+        .card-5 {
+            background-image: url(https://jw-webmagazine.com/wp-content/uploads/2020/03/d08815f3b837ce16507274fe1653b263_l-min.jpg)
+        }
+
+        .card-6 {
+            background-image: url(https://th.bing.com/th/id/OIP.a5sfLhyOhoX6vXFrbyjfxgHaFF?rs=1&pid=ImgDetMain)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card card-1">
+            <div class="card-overlay">
+                <h2>South Korea</h2>
+                <p>Seoul is a very beautiful place</p>
+            </div>
+        </div>
+        <div class="card card-2">
+            <div class="card-overlay">
+                <h2>Tbilisi</h2>
+                <p>Tbilisi is a very beautiful place</p>
+            </div>
+        </div>
+        <div class="card card-3">
+            <div class="card-overlay">
+                <h2>New York</h2>
+                <p>New York is a very beautiful place</p>
+            </div>
+        </div>
+        <div class="card card-4">
+            <div class="card-overlay">
+                <h2>Paris</h2>
+                <p>Paris is a very beautiful place</p>
+            </div>
+        </div>
+        <div class="card card-5">
+            <div class="card-overlay">
+                <h2>Tokyo</h2>
+                <p>Tokyo is a very beautiful place</p>
+            </div>
+        </div>
+        <div class="card card-6">
+            <div class="card-overlay">
+                <h2>Dubai</h2>
+                <p>Dubai is a very beautiful place</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
