@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perent{
+    background-color: rgb(34, 122, 223);
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+}
+
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(32, 233, 240);
+    transform: translate(0.5s);
+    
+}
+
+.child:hover{
+    transform: rotate(90deg);
+    border-radius: 20%;
+    background-color: rgb(33, 67, 90);
+}

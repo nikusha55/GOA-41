@@ -1,0 +1,26 @@
+.menu-bar{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p, h1{
+    color: aliceblue;
+}
+
+.info{
+    display: flex;
+}
+
+.contact{
+    background-color: rgb(64, 82, 187);
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+.info{
+    gap: 30px;
+    color: white;
+}

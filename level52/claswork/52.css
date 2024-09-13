@@ -1,0 +1,21 @@
+.perent{
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    left: 500px;
+    position: absolute;
+    top: 500px;
+}
+
+.perent:hover{
+    transform: translate(80px, 80px);
+    transform: scale(0.5);
+    transform: rotate(30deg);
+}
+
+.text:hover{
+    transform: translate(20px, -20px);
+    transform-origin: top left;
+    transform: skew(10deg);
+    background-color: black;
+}

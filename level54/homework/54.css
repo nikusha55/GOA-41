@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div{
+   text-align: center;
+   justify-content: center;
+   display: flex;
+
+   position: relative;
+
+   font-size: 50px;
+}
+
+.item{
+    position: absolute;
+
+    animation-name: meaning;
+    animation-timing-function: infinite;
+    animation-duration: 1s;
+    animation-delay: 2s;
+
+}
+
+.heart{
+    position: absolute;
+    animation-name: something;
+    animation-timing-function: infinite;
+    animation-duration: 2s;
+
+}
+
+@keyframes meaning{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes something{
+    0%{
+        transform: scale(2);
+    }
+    10%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+}

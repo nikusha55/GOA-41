@@ -1,0 +1,41 @@
+div {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(80, 133, 10);
+
+    animation-name: firstanim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes firstanim {
+    0% {
+        background-color: rgb(6, 233, 214);
+    }
+
+    10% {
+        background-color: rgb(8, 253, 0);
+    }
+
+    20% {
+        background-color: rgb(50, 16, 241);
+    }
+
+    30% {
+        background-color: rgb(214, 7, 241);
+    }
+
+    40% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    60% {
+        background-color: purple;
+    }
+
+}

@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perent{
+    position: relative;
+}
+
+.child{
+    width: 35px;
+    height: 35px;
+    color: aqua;
+    background-color: rgb(105, 14, 14);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 9px;
+    right: 95px;
+}
