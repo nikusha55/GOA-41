@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID და კლასი</title>
+    <style>
+        .text {
+            color: black;
+        }
+        .box {
+            background-color: lightgray;
+            padding: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" class="box">ეს არის ტექსტი</div>
+    <button id="changeColorBtn">ფერის შეცვლა</button>
+    <button id="hideDivBtn">დივის დამალვა</button>
+
+    <div class="fontChange">ფონტი 1</div>
+    <div class="fontChange">ფონტი 2</div>
+    <div class="fontChange">ფონტი 3</div>
+    <button id="changeFontBtn">ფონტის შეცვლა</button>
+
+    <script>
+        // 1. ტექსტის შიგთავსის შეცვლა და console.log-ში გამოყვანა
+        document.getElementById("changeColorBtn").addEventListener("click", () => {
+            const div = document.getElementById("myDiv");
+            const divColor = window.getComputedStyle(div).backgroundColor;
+            const textColor = window.getComputedStyle(div).color;
+
+            div.style.backgroundColor = textColor;
+            div.style.color = divColor;
+            console.log(div.textContent);
+        });
+
+        // 2. ID ელემენტის გაქრობა
+        document.getElementById("hideDivBtn").addEventListener("click", () => {
+            document.getElementById("myDiv").style.display = "none";
+        });
+
+        // 3. ფონტის შეცვლა
+        document.getElementById("changeFontBtn").addEventListener("click", () => {
+            const elements = document.querySelectorAll(".fontChange");
+            elements.forEach(el => {
+                el.style.fontFamily = "Arial, sans-serif"; // შეცვალეთ საჭირო ფონტით
+            });
+        });
+    </script>
+</body>
+</html>

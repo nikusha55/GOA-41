@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტექსტების მანიპულირება</title>
+</head>
+<body>
+    <p id="myParagraph">ეს არის საწყისი ტექსტი</p>
+    <button id="changeTextBtn">პარაგრაფის ტექსტის შეცვლა</button>
+
+    <img id="myImage" src="https://via.placeholder.com/150" alt="Placeholder Image">
+    <button id="changeImageBtn">სურათის ლინკის შეცვლა</button>
+
+    <input id="myInput" type="text" placeholder="მიუწვდეთ ტექსტი">
+    <button id="showInputBtn">input ტექსტის გამოჩენა</button>
+
+    <script>
+        // 1. პარაგრაფის ტექსტის შეცვლა
+        document.getElementById("changeTextBtn").addEventListener("click", () => {
+            document.getElementById("myParagraph").textContent = "ტექსტი შეიცვალა!";
+        });
+
+        // 2. სურათის ლინკის შეცვლა
+        document.getElementById("changeImageBtn").addEventListener("click", () => {
+            document.getElementById("myImage").src = "https://via.placeholder.com/200"; // შეცვალეთ საჭირო ლინკით
+        });
+
+        // 3. input ველის ტექსტის პარაგრაფში გამოჩენა
+        document.getElementById("showInputBtn").addEventListener("click", () => {
+            const inputText = document.getElementById("myInput").value;
+            document.getElementById("myParagraph").textContent = inputText;
+        });
+    </script>
+</body>
+</html>

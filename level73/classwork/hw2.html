@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>პარაგრაფების ცვლილება</title>
+    <style>
+        .changeable {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <p id="studentInfo">ეს არის ID პარაგრაფი</p>
+    <p class="changeable">პარაგრაფი 1</p>
+    <p class="changeable">პარაგრაფი 2</p>
+    <p class="changeable">პარაგრაფი 3</p>
+
+    <script>
+        const studentParagraph = document.getElementById("studentInfo");
+        const changeableParagraphs = document.querySelectorAll(".changeable");
+
+        // onClick event listener
+        studentParagraph.addEventListener("click", () => {
+            console.log("სახელი: გიორგი, გვარი: ტუშურაშვილი");
+        });
+
+        // for loop to change content and color
+        for (let i = 0; i < changeableParagraphs.length; i++) {
+            changeableParagraphs[i].textContent = `შეცვლილი პარაგრაფი ${i + 1}`;
+            changeableParagraphs[i].style.color = "green"; 
+        }
+    </script>
+</body>
+</html>
