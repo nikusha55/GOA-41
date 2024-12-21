@@ -1,0 +1,1 @@
+#prezentaciebi gvqonda
